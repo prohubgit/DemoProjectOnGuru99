@@ -1,13 +1,20 @@
 package com.guru99.demo.pages;
 
 import com.guru99.demo.common.Driver;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+import java.io.File;
 import java.util.Iterator;
 import java.util.Set;
+
+
+
 
 public class BasePage extends Driver {
 
@@ -159,10 +166,33 @@ public class BasePage extends Driver {
     //===================================================================================//
 
     /*====================================================================================
-
+         Method for checking elements presence on Page
     =====================================================================================*/
+        public void checkIfElemntPresent(String element, int timeout) throws Exception{
+            for(int sec=0;; sec++){
+                if(sec>=timeout)
+                   //fail("Timeoout! Coundn't locate element"+element);
+                    try {
+                       //     if(selenium.isElementPresent(element))
+                            break;
+                    }
+                    catch (Exception ex){
 
+                    }
+                    Thread.sleep(1000);
+            }
+        }
 
     //===================================================================================//
+
+    /*#################################################################################
+             Method for Screenshot
+     #################################################################################*/
+    public void screenshot(){
+        File screen = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        // Now copy the shreenshot on specific location
+       // FileUtils.copyFile(screen, newFile("src/test/errorScreenshots"));
+    }
+    //*********************************************************************************
     
 }

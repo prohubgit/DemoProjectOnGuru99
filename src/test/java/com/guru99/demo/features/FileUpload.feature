@@ -1,4 +1,4 @@
-@All
+#@All
 Feature: File Upload / Download
   as customer i want the ability to upload a file
   so that file content will be available.
