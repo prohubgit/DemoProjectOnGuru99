@@ -6,12 +6,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class DemoGuru99 extends BasePage {
+public class DemoGuru99HomePage extends BasePage {
 
     /*##############################################################################
-               DemoGuru99 constructor
+               DemoGuru99HomePage constructor
      ##############################################################################*/
-    public DemoGuru99 (WebDriver driver){
+    public DemoGuru99HomePage(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

@@ -9,33 +9,33 @@ Feature: Create New User Account
 #  And I click on AcceptAll button on Manage your Privacy
 #===================================================================
 #Scenario No.1:
-  @userAccount
- Scenario Outline: User can create a new account
-
-    When I click on BankProject link
-    And I click on here link under the Steps To Generate Access header
-    And I enter my "<Email ID>" in to Email ID text box
-    And I click on Submit button
-    Then User ID and Password are displayed on Access Page
-
- Examples:
-   |Email ID                  |
-   |shaikkh12223344@gmail.com |
-#   |turaid4321@outlook.com|
-
-#===================================================================
-#Scenario No.2:
-  @DeleteUserAccount
-Scenario: User can successfully delete a user account
-
-  When I click on BankProject link
-  And I enter "<Manager ID>" in to user id text box
-  And I enter "<Manager Password>" in to password field
-  And I click on login button
-  And I click on Delete Customer link
-  And I enter "<customer ID>" in to customer id field
-  And click on submit button
-
+#  @userAccount
+# Scenario Outline: User can create a new account
+#
+#    When I click on BankProject link
+#    And I click on here link under the Steps To Generate Access header
+#    And I enter my "<Email ID>" in to Email ID text box
+#    And I click on Submit button
+#    Then User ID and Password are displayed on Access Page
+#
+# Examples:
+#   |Email ID                  |
+#   |shaikkh12223344@gmail.com |
+##   |turaid4321@outlook.com|
+#
+##===================================================================
+##Scenario No.2:
+#  @DeleteUserAccount
+#Scenario: User can successfully delete a user account
+#
+#  When I click on BankProject link
+#  And I enter "<Manager ID>" in to user id text box
+#  And I enter "<Manager Password>" in to password field
+#  And I click on login button
+#  And I click on Delete Customer link
+#  And I enter "<customer ID>" in to customer id field
+#  And click on submit button
+#
 
 #===================================================================
 #Scenario No.3:
@@ -50,6 +50,6 @@ Scenario: User can successfully delete a user account
 
     Examples:
       |Email ID                  |
-      |shaikkh12223344@gmail.com |
+      ||
     #===================================================================
 #Scenario No.1:

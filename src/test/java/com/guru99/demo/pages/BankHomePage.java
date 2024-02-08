@@ -21,9 +21,9 @@ public class BankHomePage extends BasePage{
     /*##############################################################################
                    Method for click on hyper link "here"
      ##############################################################################*/
-    public DemoGuru99 clickOnVisitHere(){
+    public DemoGuru99HomePage clickOnVisitHere(){
         visitHere.click();
-        return new DemoGuru99(driver);
+        return new DemoGuru99HomePage(driver);
     }
     //  *******************************************************************************
 }

@@ -7,12 +7,12 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.support.PageFactory;
 
 
-public class CreateNewUserAccountSteps extends BasePage {
+public class DemoGuru99HomePageSteps extends BasePage {
 
 //    FileUploadDemoPage fileUploadDemoPage = PageFactory.initElements(driver, FileUploadDemoPage.class);
 //    BankHomePage bankHomePage = PageFactory.initElements(driver, BankHomePage.class);
 //
-//    //DemoGuru99 demoGuru99 = PageFactory.initElements(driver, DemoGuru99.class);
+//    //DemoGuru99HomePage demoGuru99 = PageFactory.initElements(driver, DemoGuru99HomePage.class);
 //
 //    UserAccessPage userAccessPage = PageFactory.initElements(driver, UserAccessPage.class);
 //
