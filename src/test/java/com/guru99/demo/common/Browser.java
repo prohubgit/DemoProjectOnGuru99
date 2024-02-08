@@ -74,6 +74,7 @@ public class Browser extends Driver{
     }
 
     public void closeBrowser(){
+        //this method is commited due to logical error in one of the script
         //driver.manage().deleteAllCookies();
         driver.quit();
 
