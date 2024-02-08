@@ -10,5 +10,11 @@
         <module name="Test.Demo.Project" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="19" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Test.Demo.Project" options="" />
+    </option>
   </component>
 </project>

@@ -58,7 +58,7 @@ public class Browser extends Driver{
             case "HeadlessFirfox":
                 driver = initHeadlessFirefox();
                 break;
-            case "IE" :
+            case "IE":
             case "ie":
             case "InternetExplorer":
             case "internetexplorer":
