@@ -92,7 +92,7 @@ public class DemoGuru99HomePageSteps extends BasePage {
     @Given("I navigate to Guru99Com-popup page")
     public void i_navigate_to_guru99com_popup_page() {
         launchUrl();
-        demoGuru99Popup.managePrivacyOnFrame();
+        //demoGuru99Popup.managePrivacyOnFrame();
     }
 
     @When("I click on here link")

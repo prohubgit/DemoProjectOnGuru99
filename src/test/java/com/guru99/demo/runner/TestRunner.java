@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
 
         features = {"src/test/java/com/guru99/demo/features"},
         glue = {"com/guru99/demo/hook", "com/guru99/demo/stepDefinitions"},
-        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+                "pretty", "json:target/report.json"},
         tags = "@newUserCredential"
         )
 
